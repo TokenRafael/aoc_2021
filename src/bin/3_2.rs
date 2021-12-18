@@ -1,4 +1,4 @@
-const size: usize = 12;
+const SIZE: usize = 12;
 
 fn main() {
     let input = include_str!("../../inputs/3_1.txt");
@@ -34,8 +34,8 @@ fn main() {
     println!("Result: {} * {} = {}", ox_level, co2_level, ox_level * &co2_level);
 }
 
-fn calc_freqs(input: &Vec<&str>) -> [[i32; size]; 2] {
-    let mut freqs: [[i32; size]; 2] = [[0;size];2];
+fn calc_freqs(input: &Vec<&str>) -> [[i32; SIZE]; 2] {
+    let mut freqs: [[i32; SIZE]; 2] = [[0;SIZE];2];
     for line in input.into_iter() {
         for (idx, bit) in line.chars().enumerate() {
             match bit {

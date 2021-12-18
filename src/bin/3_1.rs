@@ -1,7 +1,7 @@
-const size: usize = 12;
+const SIZE: usize = 12;
 
 fn main() {
-    let mut freqs = [[0;size], [0; size]];
+    let mut freqs = [[0;SIZE], [0; SIZE]];
     let input = include_str!("../../inputs/3_1.txt");
     for line in input.lines() {
         for (idx, bit) in line.chars().enumerate() {
@@ -14,7 +14,7 @@ fn main() {
     }
     println!("{:?}", freqs);
     let mut num: u32 = 0;
-    for i in 0..size {
+    for i in 0..SIZE {
         if freqs[1][i] > freqs[0][i] { num += 0b1 };
         num = num << 1;
     }
