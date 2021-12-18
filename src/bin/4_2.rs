@@ -1,4 +1,4 @@
-use std::{num::ParseIntError, process::exit, str::FromStr};
+use std::{num::ParseIntError, str::FromStr};
 
 const SIZE: usize = 5;
 
